@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(51, 51, 51);
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  z-index: 1;
+}
+.footer-img{
+  width: 20px;
+}
+.loader {
+  margin-top: 10px;
+  margin-left: 45%;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .sidenav {
+    margin-top: 53px;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    padding-top: 20px;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: "Indie Flower", cursive;
+  }
+
+  .main {
+    padding: 0px 10px;
+    margin-left: 40%;
+  }
+  .login-div {
+    margin: 20%;
+    color: aliceblue;
+  }
+  .dropbtn {
+    width: 100%;
+    background-color: #349cdb;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    font-family: inherit;
+    margin-top: 10px;
+  }
+
+  .login-form {
+    margin-top: 70px;
+  }
+
+  .login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+  }
+
+  .login-main-text h2 {
+    font-weight: 300;
+  }
+  .loader-div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .box {
+    width: 100%;
+  }
+  .sidenav {
+    background-color: rgb(31, 31, 31);
+    font-family: "Indie Flower", cursive;
+  }
+  .login-div {
+    margin: 10%;
+    color: aliceblue;
+  }
+  .login-main-text {
+    padding: 20px;
+    color: #fff;
+  }
+
+  .dropbtn {
+    width: 100%;
+    background-color: #349cdb;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    font-family: inherit;
+    margin-top: 10px;
+  }
+  .logo{
+    display:block !important;
+  }
+}

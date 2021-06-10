@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  border-bottom: 1px solid #349CDB;
+}
+
+.logo{
+  position: absolute;
+  left: 10%;
+  float: left;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.nav-p{
+  margin: 5px;
+  float: left;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbarr {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+.login{
+  background-color: green;
+}
+/* Links inside the navbar */
+.navbarr a {
+  margin-right: 10px;
+  float: right;
+  font-size: 16px;
+  color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none !important;
+}
+
+/* The dropdown container */
+.dropdown-download {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown-download .dropbtn-download {
+  border-radius: 0px !important;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbarr a:hover, .dropdown-download:hover .dropbtn-download {
+  background-color: #349CDB;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  
+  float: none;
+  color: wheat;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  display: block;
+  color: rgb(51, 51, 51);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-download:hover .dropdown-content {
+  display: block;
+  
+}
+@media only screen and (max-width: 580px) {
+  /* For mobile phones: */
+    .nav-p{
+      display: none;
+    }
+    .navbarr a{
+      margin: auto;;
+    }
+}
+@media only screen and (max-width: 420px){
+  .logo{
+    display: none;
+  }
+}

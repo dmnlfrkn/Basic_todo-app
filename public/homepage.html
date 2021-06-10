@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/nav_style.css " />
+    <link rel="stylesheet" href="styles/homepace.css" />
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    
+
+    <title>Todo App</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html' ">
+            <img src="./icons/logo.png" alt="logo" />
+            <p class="nav-p">Todo-App</p>
+        </div>
+        <div class="navbarr">
+            <div class="dropdown-download">
+                <button onclick="window.location.href='homepage.html' " class="dropbtn-download">
+                    Profil
+                </button>
+                <div class="dropdown-content profil-content">
+                    <a href="#">Profil Settings</a>
+                    <a href="login.html">Log Out</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown-download">
+                <button onclick="window.location.href='download.html' " class="dropbtn-download">
+                    Download
+                </button>
+                <div class="dropdown-content">
+                    <a href="download.html#windows">Windows</a>
+                    <a href="download.html#Mac">Mac</a>
+                    <a href="download.html#Linux">Linux</a>
+                </div>
+            </div>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+    
+    <!-- ************************************************************************************************** -->
+    <div id="cointainer">
+        <main>
+            <div id="folders">
+                <form id="form-folder">
+                    <input type="text" name="folder-name" id="folder-name" placeholder="Your new folder" />
+                    <input type="submit" value="Create new" />
+                </form>
+                <div class="card"></div>
+            </div>
+            <div id="tasks" class="card">
+                <form id="form-task">
+                    <input type="text" name="task-name" id="task-name" placeholder="Your task" />
+                    
+                    <input type="submit" value="+" />
+                </form>
+                <div id="task-container"></div>
+            </div>
+        </main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form id="form-task-edit">
+                    <input type="text" name="task-name" id="task-name-edit" placeholder="Your task" />
+                    <input type="submit" value="Save" />
+                </form>
+            </div>
+        </div>
+
+        
+
+</body>
+<script src="scripts/homapage.js"></script>
+
+</html>

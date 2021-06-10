@@ -1,0 +1,352 @@
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .profil {
+    width: 40px;
+    height: 29px;
+    padding: 11px 0px 0px 0px !important;
+    margin-top: 3px;
+    border-radius: 100%;
+    font-size: 14px !important;
+  }
+  body {
+    background-color: rgb(51, 51, 51) !important;
+
+    text-align: center;
+  }
+  .profil-content {
+    position: absolute;
+    right: 0px;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+  main {
+    min-height: calc(100vh - 80px);
+    background-color: rgb(51, 51, 51);
+    padding: 40px;
+    display: flex;
+  }
+
+  #folders {
+    flex: 4;
+    margin-right: 24px;
+  }
+
+  #tasks {
+    flex: 8;
+  }
+
+  .card {
+    background-color: rgb(110, 110, 110);
+    /*border-radius: 24px;*/
+    padding: 32px;
+  }
+  .folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+    margin-bottom: 24px;
+  }
+
+  .folder.active {
+    background: rgb(31, 31, 31);
+    color: white;
+  }
+  .folder.active:hover {
+    border: none;
+  }
+  .folder:hover {
+    border: 1px solid #349cdb;
+    cursor: pointer;
+  }
+
+  .task {
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    padding: 16px 18px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    color: white;
+  }
+
+  .task-name {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .task-info {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .task-info > * {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .task-info > p {
+    margin: auto;
+    color: #349cdb;
+  }
+
+  .modal-content {
+    border-radius: 20px;
+  }
+
+  .urgent {
+    background: #349cdb;
+    color: white;
+  }
+  /* Forms */
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  input[type="text"] {
+    flex: 1;
+  }
+  input[type="text"],
+  input[type="date"],
+  select {
+    border: none;
+    border-bottom: 2px solid #349cdb;
+    margin: 0 24px;
+    border-radius: 10px;
+  }
+
+  input[type="submit"] {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    background: #349cdb;
+  }
+
+  #tasks input[type="submit"] {
+    width: 40px;
+  }
+  /* Typography */
+  nav p {
+    color: white;
+  }
+
+  nav span {
+    font-weight: bold;
+  }
+  .done {
+    text-decoration: line-through;
+    color: #a0a0a0;
+  }
+  .task-name p {
+    margin-left: 16px;
+  }
+
+  /*Icons*/
+
+  .delete,
+  .edit {
+    cursor: pointer;
+  }
+
+  /*modal*/
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    margin: auto;
+    padding: 36px;
+    background-color: rgb(110, 110, 110);
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .profil {
+    width: 40px;
+    height: 29px;
+    padding: 11px 0px 0px 0px !important;
+    margin-top: 3px;
+    border-radius: 100%;
+    font-size: 14px !important;
+  }
+  body {
+    background-color: rgb(51, 51, 51) !important;
+
+    text-align: center;
+  }
+  .profil-content {
+    position: absolute;
+    right: 0px;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+  main {
+    min-height: calc(100vh - 80px);
+    background-color: rgb(51, 51, 51);
+    padding: 40px;
+    display: flex;
+  }
+
+  #folders {
+    flex: 4;
+    margin-right: 24px;
+  }
+
+  #tasks {
+    flex: 8;
+  }
+
+  .card {
+    background-color: rgb(110, 110, 110);
+    /*border-radius: 24px;*/
+    padding: 32px;
+  }
+  .folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+    margin-bottom: 24px;
+  }
+
+  .folder.active {
+    background: rgb(31, 31, 31);
+    color: white;
+  }
+  .folder.active:hover {
+    border: none;
+  }
+  .folder:hover {
+    border: 1px solid #349cdb;
+    cursor: pointer;
+  }
+
+  .task {
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    padding: 16px 18px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    color: white;
+  }
+
+  .task-name {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .task-info {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .task-info > * {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .task-info > p {
+    margin: auto;
+    color: #349cdb;
+  }
+
+  .modal-content {
+    border-radius: 20px;
+  }
+
+  .urgent {
+    background: #349cdb;
+    color: white;
+  }
+  /* Forms */
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  input[type="text"] {
+    flex: 1;
+  }
+  input[type="text"],
+  input[type="date"],
+  select {
+    border: none;
+    border-bottom: 2px solid #349cdb;
+    margin: 0 24px;
+    border-radius: 10px;
+  }
+
+  input[type="submit"] {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    background: #349cdb;
+  }
+
+  #tasks input[type="submit"] {
+    width: 40px;
+  }
+  /* Typography */
+  nav p {
+    color: white;
+  }
+
+  nav span {
+    font-weight: bold;
+  }
+  .done {
+    text-decoration: line-through;
+    color: #a0a0a0;
+  }
+  .task-name p {
+    margin-left: 16px;
+  }
+
+  /*Icons*/
+
+  .delete,
+  .edit {
+    cursor: pointer;
+  }
+
+  /*modal*/
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    margin: auto;
+    padding: 36px;
+    background-color: rgb(110, 110, 110);
+  }
+}
