@@ -15,6 +15,13 @@
     <script src="scripts/getJson.js"></script>
     <script src="scripts/homapage.js"></script>
     <script src="scripts/jquery_json.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
     <title>Todo App</title>
 </head>
 
@@ -48,7 +55,7 @@
             <a href="index.html">Home</a>
         </div>
     </nav>
-
+    
     <!-- ************************************************************************************ -->
 
     <div class="body-container">
@@ -70,10 +77,12 @@
                 <div id="projects" class="projects">
                 </div>
             </div>
+            <p class="ppb">Leftover From The Day</p>
+            <div id="progressbar" class="progressbar"></div>
         </div>
         <div class="task-panel" id="task-panel">
             <div class="task-box" id="task-box">
-                <div class="create-task-div">
+                <div class="create-task-div" id="create-task-div">
                     <div class="project-name" id="project-name">
                     </div>
                     <div class="create-task-btn-div">
