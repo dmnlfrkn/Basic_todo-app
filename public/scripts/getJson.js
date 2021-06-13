@@ -18,5 +18,11 @@ function Change() {
 GetQuotes();
 
 let timerId = setInterval(() => GetQuotes(), 500000);
-
-
+var dt = new Date();
+var time = 100-100*(24*60- (dt.getHours()*60  + dt.getMinutes()))/(24*60);
+console.log(time);
+$( function() {
+    $( "#progressbar" ).progressbar({
+      value: time
+    });
+  } );
