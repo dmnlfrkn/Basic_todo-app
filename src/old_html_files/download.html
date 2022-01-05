@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/nav_style.css" />
+    <link rel="stylesheet" href="styles/download_page.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/download.js"></script>
+    <title>Todo App</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html' ">
+            <img src="./icons/logo.png" alt="logo" />
+            <p class="nav-p">Todo-App</p>
+        </div>
+        <div class="navbarr">
+            <a class="login" href="login.html">Login</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown-download">
+                <button onclick="window.location.href='download.html' " class="dropbtn-download">
+                    Download
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#windows">Windows</a>
+                    <a href="#Mac">Mac</a>
+                    <a href="#Linux" >Linux</a>
+                </div>
+            </div>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+    <div class="box">
+        <div id="accordion" class="downloads">
+            <h3>Windows</h3>
+            <div>
+                <p>
+                    Windows application here: <a href="#">click download</a>
+                </p>
+            </div>
+            <h3>Mac</h3>
+            <div>
+                <p>
+                    Mac application here: <a href="#">click download</a>
+                </p>
+            </div>
+            <h3>Linux</h3>
+            <div>
+                <p>
+                    Linux application here: <a href="#">click download</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact">
+            <p>© 2021 DUMANLI <img src="./icons/logo.png" class="footer-img" alt="logo"></p>
+        </div>
+    </footer>
+</body>
+
+</html> 

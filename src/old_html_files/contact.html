@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/nav_style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="scripts/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="scripts/contact.js"></script>
+
+  <title>Todo App</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo" onclick="window.location.href='index.html' ">
+      <img src="./icons/logo.png" alt="logo">
+      <p class="nav-p">Todo-App</p>
+    </div>
+    <div class="navbarr">
+      <a class="login" href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown-download">
+        <button onclick="window.location.href='download.html' " class="dropbtn-download">Download
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="download.html#windows">Windows</a>
+          <a href="download.html#Mac">Mac</a>
+          <a href="download.html#Linux">Linux</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+    </div>
+  </nav>
+  
+  <!-- ************************************************************************************ -->
+ 
+  <h3>Contact Form</h3>
+
+  <div class="main">
+    <div class="login-div">
+      <div class="login-form">
+        <form id="myform" action="homepage.html">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" placeholder="User Name" required />
+          </div>
+          <div class="form-group ui-widget">
+            <label for="tags">Country </label>
+            <input id="tags" class="form-control">
+          </div>
+          <div class="form-group">
+            <label></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write something"
+              required></textarea>
+          </div>
+          <input type="button" id="submit-buton" class="dropbtn btn btn-success btn-ladda" data-style="expand-right"
+            value="Submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer> 
+    <div class="contact">
+      <p>© 2021 DUMANLI <img src="./icons/logo.png" class="footer-img" alt="logo"></p>
+    </div>
+  </footer>
+</body>
+
+</html>

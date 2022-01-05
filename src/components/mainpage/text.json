@@ -1,0 +1,24 @@
+{
+    "text1": {
+        "col1": "Manage Your Daily Life",
+        "col2": "You can manage your daily programs.",
+        "col3": "With easy steps you can create task and follow them.",
+        "col4": "Also you can create a project and manage your job task."
+    },
+    "text2": {
+        "col1": "At All Operating Systems",
+        "col2": "You can use any operating systems.",
+        "col3": "Follow the instructions into DOWNLOAD page",
+        "col4": "And download Todo-App program to your pc.",
+        "col5": "(Recommended ones are shown)",
+        "col6": "You can also use in web."
+    },
+    "text3": {
+        "col1": "Easy Sing up / Easy Login",
+        "col2": "Just your email, you can sing in",
+        "col3": " and start to use Todo-App.",
+        "col4": "If you have not account yet visit Login page",
+        "col5": "And write your email and password, it finished ",
+        "col6": "You can use Todo-App web."
+    }
+}
